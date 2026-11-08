@@ -1,0 +1,266 @@
+{
+  "date": "2026-11-08",
+  "timezone": "Asia/Singapore",
+  "backend_tests": {
+    "passed": 27,
+    "failed": 0,
+    "command": "python -X utf8 -m unittest discover -s agent_backend -p 'test_*.py' -v",
+    "verified_at": "2026-11-08",
+    "real_model_calls": 0
+  },
+  "data": {
+    "rooms": 9,
+    "seats": 2161,
+    "initially_available": 2161,
+    "book_records": 247,
+    "reader_recommendation_records": 162,
+    "yuntaigou_records": 85,
+    "source_files": [
+      "江苏大学图书馆资料/座位表.csv",
+      "江苏大学图书馆资料/2025年读者荐购书单.csv",
+      "江苏大学图书馆资料/2025年芸台购书单.csv"
+    ],
+    "verified_against_source": true,
+    "existing_reservations_preserved_on_restart": true
+  },
+  "browser": {
+    "passed": true,
+    "checks": [
+      "247条书目与2161个座位初始可用",
+      "书单切换、分页、ISBN检索和缺失位置",
+      "9张阅览室平面图、座位位置与桌椅入口图标",
+      "缩放、拖动、全览与按编号定位",
+      "从平面图预约C902并签到和退座",
+      "馆员登录弹窗、错误密码拦截、工作台访问控制与退出",
+      "反馈提交、馆员回复与读者办结",
+      "首页大输入框、左侧江小图、右侧江小书与角色选择记忆",
+      "两位馆员的首页立绘背景透明",
+      "侧栏角色顺序、切换、已发送消息保留与Agent找书预约",
+      "读者权限与私有文件边界",
+      "手机双角色入口、座位图缩放与登录弹窗"
+    ],
+    "console_errors": [],
+    "screenshots": [
+      "Agent侧栏.png",
+      "离线Agent-学校与图书馆简介.png",
+      "离线Agent-手机.png",
+      "离线Agent-轮数上限.png",
+      "离线版-手机.png",
+      "离线版-电脑.png",
+      "选座-手机.png",
+      "选座-电脑.png",
+      "馆员工作台.png",
+      "馆员登录.png",
+      "首页-手机.png",
+      "首页-电脑.png"
+    ],
+    "paid_api_calls": 0
+  },
+  "rule_demo_assistant": {
+    "knowledge_categories": 42,
+    "backend_tests_passed": 25,
+    "campus_csv_dialogue_smoke_prompts": 18,
+    "campus_csv_dialogue_smoke_passed": true,
+    "temporary_database_only": true,
+    "chinese_time_expressions_checked": true,
+    "book_location_follow_up_checked": true,
+    "seat_ordinal_follow_up_checked": true,
+    "booking_and_feedback_id_queries_checked": true,
+    "write_operations_still_require_confirmation": true,
+    "clearly_labelled_as_rule_demo": true,
+    "paid_api_calls": 0
+  },
+  "real_deepseek_api_tested": false,
+  "official_library_connected": false,
+  "seat_layouts": {
+    "source": "江苏大学图书馆资料/座位表截图",
+    "room_maps": 9,
+    "clickable_seats_matched_to_inventory": 2161,
+    "seats_with_placement_inferred_at_image_edge": [
+      "文学阅览室(4楼) 220",
+      "文学阅览室(4楼) 219"
+    ],
+    "outline_cells_without_inventory_entry": 131,
+    "uses_snapshot_availability": false
+  },
+  "staff_login": {
+    "server_validated": true,
+    "direct_staff_access_requires_session": true,
+    "staff_api_requires_session": true,
+    "logout_revokes_session": true,
+    "session_timeout_seconds": 3600
+  },
+  "assistant_characters": {
+    "full_body_assets": {
+      "江小书": "web/assets/jiang-xiaoshu-full.png",
+      "江小图": "web/assets/jiang-xiaotu-full.png"
+    },
+    "transparent_png": true,
+    "remembered_per_browser": true,
+    "character_switch_preserves_chat": true,
+    "desktop_and_mobile_browser_checked": true,
+    "display_order": [
+      "江小图",
+      "江小书"
+    ],
+    "xiaotu_palette": [
+      "绿色",
+      "米色"
+    ]
+  },
+  "visual_refresh": {
+    "date": "2026-11-07",
+    "revision": 2,
+    "style": "法式档案封面／洛可可编辑设计",
+    "reference": "用户提供的视频画面",
+    "stylesheet": "web/visual-refresh.css",
+    "homepage_template": "web/views.js",
+    "composition": [
+      "82px装饰导航轨",
+      "巨型09刊头与数字日期",
+      "左侧AI对话区",
+      "中央一体式双角色拱门与环形刻度",
+      "右侧巨型阅与真实档案数据栏",
+      "底部三项服务票签"
+    ],
+    "decorative_assets": [
+      "web/assets/archive-column.svg",
+      "web/assets/archive-flourish.svg"
+    ],
+    "external_fonts_or_remote_images_added": false,
+    "stable_without_entrance_animation": true,
+    "dynamic_navigation_accessible_names_checked": true,
+    "backend_tests_passed": 21,
+    "browser_regression_passed": true,
+    "console_errors": [],
+    "paid_api_calls": 0,
+    "desktop_and_mobile_screenshots_reviewed": true,
+    "business_logic_changed": false,
+    "documentation_updated": [
+      "开发文档/前端维护.md",
+      "web/素材与设计说明.md"
+    ]
+  },
+  "handoff": {
+    "checked_at": "2026-11-07T11:08:33+08:00",
+    "archive_files": 63,
+    "archive_contains_real_env_or_database": false,
+    "archive_smoke_script_included": true,
+    "fresh_extraction_bootstrap": {
+      "passed": true,
+      "books": 247,
+      "seats": 2161,
+      "rooms": 9
+    },
+    "fresh_extraction_rule_demo_chat": true,
+    "checked_with_local_demo": true
+  },
+  "homepage_figure_background": {
+    "date": "2026-11-08",
+    "figures": [
+      "江小图",
+      "江小书"
+    ],
+    "server_edition_browser_passed": true,
+    "offline_edition_browser_passed": true,
+    "offline_external_requests": 0
+  },
+  "offline_agent_revision": {
+    "verified_at": "2026-11-08T10:09:15.309876+08:00",
+    "max_dialogue_turns": 10,
+    "repeated_over_limit_checked": true,
+    "reset_preserves_confirmed_records": true,
+    "base_knowledge_categories": 42,
+    "offline_extra_knowledge_categories": 12,
+    "dialogue_scenarios_passed": 20,
+    "ten_turn_scenarios": 3,
+    "dialogue_report": "网页预览/离线对话验证结果.json",
+    "browser_report": "网页预览/离线版验证结果.json",
+    "offline_browser": {
+      "passed": true,
+      "tested_at": "2026-11-08T02:30:46.261Z",
+      "checks": [
+        "单文件断网启动、247条书目、2161个座位、42类基础知识和12类离线补充知识",
+        "两位馆员的首页立绘背景透明",
+        "离线馆藏检索与书目渲染",
+        "离线座位图、预约、签到、退座和记录",
+        "离线反馈确认与本地保存",
+        "离线馆员登录、受理、回复、读者办结和退出",
+        "离线规则AI、中文时段查座、预约确认和能力问答",
+        "网页连续10轮混合任务、切换馆员保留轮数、第11及12轮持续提示且无新操作",
+        "新对话清空上下文、兜底能力说明、指定话题公开资料和正常查书；文字按纯文本展示",
+        "离线学校与图书馆简介、原文日期和可点击的官方来源",
+        "刷新后预约与反馈记录仍在当前浏览器",
+        "手机断网布局、AI侧栏和五个提示入口",
+        "手机10轮上限和新对话入口可见可用"
+      ],
+      "console_errors": [],
+      "external_requests": [],
+      "screenshots": [
+        "离线版-电脑.png",
+        "离线版-手机.png",
+        "离线Agent-轮数上限.png",
+        "离线Agent-手机.png",
+        "离线Agent-学校与图书馆简介.png"
+      ],
+      "paid_api_calls": 0
+    },
+    "desktop_and_mobile_screenshots_reviewed": true,
+    "unknown_question_capability_fallback": true,
+    "fixed_public_information_reply": true,
+    "normal_political_book_search_checked": true,
+    "source_dates_in_reply": true,
+    "offline_avatar_and_latest_reply_scroll_fixed": true,
+    "paid_api_calls": 0,
+    "limits": [
+      "规则不能保证覆盖所有自然语言和绕写表达",
+      "未测试真实DeepSeek与学校业务系统",
+      "手机为浏览器模拟视口"
+    ],
+    "documents": [
+      "开发文档/开发程度评估与验收.md",
+      "开发文档/离线Agent规则维护.md"
+    ]
+  },
+  "institution_profiles": {
+    "passed": true,
+    "verified_at": "2026-11-08T10:31:16.713973+08:00",
+    "database": "agent_backend\\data\\library_demo.sqlite3",
+    "backup": "agent_backend\\data\\backups\\before-institution-profiles-20261108-103116.sqlite3",
+    "profile_count": 2,
+    "profiles": [
+      {
+        "id": "library",
+        "title": "江苏大学图书馆简介",
+        "source_url": "https://lib.ujs.edu.cn/gk1/bgjj.htm",
+        "source_updated_at": "2025-12",
+        "verified_at": "2026-11-08"
+      },
+      {
+        "id": "university",
+        "title": "江苏大学简介",
+        "source_url": "https://www.ujs.edu.cn/xxgk/xxgk.htm",
+        "source_updated_at": "2026-10",
+        "verified_at": "2026-11-08"
+      }
+    ],
+    "preserved_tables": [
+      "books",
+      "book_index",
+      "seats",
+      "bookings",
+      "tickets",
+      "actions",
+      "ticket_events"
+    ],
+    "existing_business_data_unchanged": true,
+    "inventory": {
+      "books": 247,
+      "seats": 2161
+    },
+    "paid_api_calls": 0,
+    "server_rule_dialogue_tested": true,
+    "offline_browser_tested": true,
+    "source_links_visually_reviewed": true
+  }
+}

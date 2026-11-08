@@ -1,0 +1,3 @@
+id,title,author,summary,subjects,call_number,floor,zone,shelf_id,source,is_demo
+EXAMPLE-B01,导入示例：教育与人工智能,示例编者,这是一条用于验证CSV导入的虚构书目。,教育|人工智能|入门,EXAMPLE/01,3,演示3楼北区,EXAMPLE-SHELF-01,人工构造的CSV导入示例；不是真实馆藏,1
+

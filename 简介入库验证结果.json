@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "verified_at": "2026-11-08T10:31:16.713973+08:00",
+  "database": "agent_backend\\data\\library_demo.sqlite3",
+  "backup": "agent_backend\\data\\backups\\before-institution-profiles-20261108-103116.sqlite3",
+  "profile_count": 2,
+  "profiles": [
+    {
+      "id": "library",
+      "title": "江苏大学图书馆简介",
+      "source_url": "https://lib.ujs.edu.cn/gk1/bgjj.htm",
+      "source_updated_at": "2025-12",
+      "verified_at": "2026-11-08"
+    },
+    {
+      "id": "university",
+      "title": "江苏大学简介",
+      "source_url": "https://www.ujs.edu.cn/xxgk/xxgk.htm",
+      "source_updated_at": "2026-10",
+      "verified_at": "2026-11-08"
+    }
+  ],
+  "preserved_tables": [
+    "books",
+    "book_index",
+    "seats",
+    "bookings",
+    "tickets",
+    "actions",
+    "ticket_events"
+  ],
+  "existing_business_data_unchanged": true,
+  "inventory": {
+    "books": 247,
+    "seats": 2161
+  },
+  "paid_api_calls": 0
+}

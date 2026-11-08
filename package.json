@@ -1,0 +1,14 @@
+{
+  "name": "ujs-smart-library",
+  "version": "1.0.0",
+  "private": true,
+  "description": "江苏大学智能图书馆本地参赛原型",
+  "scripts": {
+    "dev": "python -B -X utf8 agent_backend/server.py",
+    "test": "python -B -X utf8 -m unittest discover -s agent_backend -p test_*.py -v",
+    "test:browser": "node agent_backend/browser_test.cjs",
+    "build:offline": "python -B -X utf8 scripts/build_offline.py",
+    "test:offline:dialogue": "node scripts/offline_dialogue_test.cjs",
+    "test:offline:browser": "node scripts/offline_test.cjs"
+  }
+}

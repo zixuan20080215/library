@@ -1,0 +1,152 @@
+{
+  "mode": "offline_business_demo_not_model_reasoning",
+  "note": "没有调用DeepSeek，没有扣费；所有书目、座位、预约和反馈均为演示。",
+  "books": {
+    "items": [
+      {
+        "id": "DEMO-B01",
+        "title": "演示书目：人工智能与教育入门",
+        "author": "演示编者甲",
+        "summary": "介绍人工智能、教育技术和课堂应用，面向本科生入门。",
+        "subjects": "人工智能|教育|入门",
+        "call_number": "DEMO/1",
+        "floor": 3,
+        "zone": "演示3楼北区",
+        "shelf_id": "DEMO-SHELF-01",
+        "source": "人工构造的演示记录；不是江大真实馆藏",
+        "is_demo": true,
+        "updated_at": "2026-10-29T18:35:27+08:00",
+        "availability": "unknown",
+        "reference": "book:DEMO-B01"
+      },
+      {
+        "id": "DEMO-B02",
+        "title": "演示书目：机器学习基础",
+        "author": "演示编者乙",
+        "summary": "介绍机器学习和算法基础，需一定数学知识。",
+        "subjects": "人工智能|机器学习|算法",
+        "call_number": "DEMO/2",
+        "floor": 3,
+        "zone": "演示3楼北区",
+        "shelf_id": "DEMO-SHELF-02",
+        "source": "人工构造的演示记录；不是江大真实馆藏",
+        "is_demo": true,
+        "updated_at": "2026-10-29T18:35:27+08:00",
+        "availability": "unknown",
+        "reference": "book:DEMO-B02"
+      },
+      {
+        "id": "DEMO-B06",
+        "title": "演示书目：教育研究方法",
+        "author": "演示编者己",
+        "summary": "介绍教育研究设计、访谈与资料分析。",
+        "subjects": "教育|研究方法|访谈",
+        "call_number": "DEMO/6",
+        "floor": 3,
+        "zone": "演示3楼北区",
+        "shelf_id": "DEMO-SHELF-06",
+        "source": "人工构造的演示记录；不是江大真实馆藏",
+        "is_demo": true,
+        "updated_at": "2026-10-29T18:35:27+08:00",
+        "availability": "unknown",
+        "reference": "book:DEMO-B06"
+      }
+    ],
+    "retrieval": "lexical_fts5",
+    "note": "候选结果按词项相关度排序；不是已验证的语义推荐。"
+  },
+  "location": {
+    "id": "DEMO-B01",
+    "title": "演示书目：人工智能与教育入门",
+    "floor": 3,
+    "zone": "演示3楼北区",
+    "shelf_id": "DEMO-SHELF-01",
+    "call_number": "DEMO/1",
+    "source": "人工构造的演示记录；不是江大真实馆藏",
+    "is_demo": true,
+    "reference": "book:DEMO-B01"
+  },
+  "seats": {
+    "items": [
+      {
+        "id": "DEMO-S02",
+        "floor": 3,
+        "zone": "演示3楼北区",
+        "has_power": 1,
+        "near_window": 1,
+        "quiet_zone": 1,
+        "row_no": 1,
+        "col_no": 2
+      },
+      {
+        "id": "DEMO-S04",
+        "floor": 3,
+        "zone": "演示3楼北区",
+        "has_power": 1,
+        "near_window": 1,
+        "quiet_zone": 1,
+        "row_no": 1,
+        "col_no": 4
+      },
+      {
+        "id": "DEMO-S06",
+        "floor": 3,
+        "zone": "演示3楼北区",
+        "has_power": 1,
+        "near_window": 1,
+        "quiet_zone": 1,
+        "row_no": 1,
+        "col_no": 6
+      }
+    ],
+    "start_at": "2026-10-29T18:40:27+08:00",
+    "end_at": "2026-10-29T20:40:27+08:00",
+    "is_demo": true,
+    "note": "全部为虚构座位和人工标注；空闲仅表示原型内该时段没有有效预约，不表示现场无人。"
+  },
+  "reservation_preview": {
+    "action_id": "09a371546ed94cd7a47b2d7780c80fe8",
+    "kind": "reserve",
+    "preview": {
+      "start_at": "2026-10-29T18:40:27+08:00",
+      "end_at": "2026-10-29T20:40:27+08:00",
+      "seat_id": "DEMO-S02"
+    },
+    "requires_confirmation": true,
+    "expires_at": "2026-10-29T18:40:27+08:00",
+    "is_demo": true,
+    "note": "仅生成待确认操作；尚未预约、签到或提交反馈。"
+  },
+  "reservation_receipt": {
+    "id": "BK-c4be8fc03f3c",
+    "seat_id": "DEMO-S02",
+    "start_at": "2026-10-29T18:40:27+08:00",
+    "end_at": "2026-10-29T20:40:27+08:00",
+    "status": "reserved",
+    "is_demo": true
+  },
+  "checked_in": {
+    "id": "BK-c4be8fc03f3c",
+    "seat_id": "DEMO-S02",
+    "start_at": "2026-10-29T18:40:27+08:00",
+    "end_at": "2026-10-29T20:40:27+08:00",
+    "status": "checked_in",
+    "is_demo": true
+  },
+  "feedback_receipt": {
+    "id": "FB-68e970b8bd17",
+    "status": "pending",
+    "is_demo": true,
+    "officially_submitted": false
+  },
+  "feedback_status": {
+    "id": "FB-68e970b8bd17",
+    "category": "设备故障",
+    "location": "演示3楼北区 DEMO-S02",
+    "description": "演示问题：插座无法供电。",
+    "status": "pending",
+    "created_at": "2026-10-29T18:35:27+08:00",
+    "is_demo": true,
+    "officially_submitted": false
+  }
+}
